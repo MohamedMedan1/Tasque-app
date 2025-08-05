@@ -12,6 +12,7 @@ export const metadata = {
     description: "View and manage your profile information, including your name, email, and password settings."
 };
 
+export const runtime = 'nodejs';
 
 export default async function Page() {
     const { user_metadata, email } = await getCurrentUser();

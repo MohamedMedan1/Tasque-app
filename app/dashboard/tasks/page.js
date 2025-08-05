@@ -15,6 +15,8 @@ export const metadata = {
     description: "View, manage, and organize your tasks efficiently. Stay productive with a clean, responsive interface built using Next.js."
 };
 
+export const runtime = 'nodejs';
+
 export default async function Page({ searchParams }) {
     const { taskStatus, sortBy,searchDate } = searchParams;
     const { email } = await getCurrentUser();

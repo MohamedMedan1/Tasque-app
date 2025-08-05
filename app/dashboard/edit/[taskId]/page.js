@@ -7,6 +7,8 @@ export const metadata = {
     description: "Update your task details, including the title, description, and deadline. Keep your productivity on track with quick edits and seamless task management."
 };
 
+export const runtime = 'nodejs';
+
 export default async function Page({ params }) {
     const { taskId } = params;
     const task = await getTask(taskId);

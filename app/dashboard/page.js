@@ -16,6 +16,9 @@ export const metadata = {
     description: "View and manage your tasks in one place with your personalized dashboard. Built with Next.js for speed, clarity, and seamless productivity."
 };
 
+export const runtime = 'nodejs';
+
+
 export default async function Page({searchParams}) {
     const user = await getCurrentUser();
     const { id: userId } = await getAccountID(user?.email);

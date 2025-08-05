@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #8b5cf6;       
+  --accent: #7c3aed;       
+  --secondary: #2563eb;      
+  --main-text: #111827;   
+  --main-bg: #f3f1f1; 
+  --input-bg:rgb(0 0 0 / 0.05);
+  --table-bg:#fff;
+  --red-label:#fddada;
+  --green-label:#cdf8dc;
+  --red-text: #ef4444;
+  --green-text:#22c55e;
+}
+
+.dark-mode {
+  --primary: #4c51bf;
+  --accent: #6b46c1;
+  --secondary: #3B82F6;
+  --main-text: #f9fafb;
+  --main-bg: #111827;
+  --input-bg:rgb(255 255 255 / 0.05);
+  --table-bg:#18212f;
+  --red-label:#ef4444;
+  --green-label:#22c55e;
+  --red-text: #fddada;
+  --green-text:#cdf8dc;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--table-bg);
+}
+
+.spinner{
+  animation: spinnerMove 0.5s linear infinite;
+}
+
+@keyframes spinnerMove{
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg) ;}
+}
+
+.main-radial-bg {
+  background: radial-gradient(
+    circle at top left,
+    #5108b1 0%,
+    #640b60 40%,
+    #3c0b64  100%
+  );
+}
+.t-shadow{
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.main-title{
+  cursor: pointer;
+  z-index: 1000;
+}
+.main-title::before,
+.main-title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.main-title::before{
+  left: -50px;
+}
+.main-title::after{
+  right: -50px;
+}
+.main-title:hover::after{
+  animation: rightCircleMove 1s both,circleGrow 1s 0.8s both;
+}
+.main-title:hover::before{
+  animation: leftCircleMove 1s both,circleGrow 1s 0.8s both;
+}
+@keyframes rightCircleMove{
+  0%{right: -50px}
+  100%{right: 0px}
+}
+@keyframes leftCircleMove{
+  0%{left: -50px}
+  100%{left: 0px}
+}
+@keyframes circleGrow{
+  0%{
+    width: 20px;
+    height: 20px;
+  }
+  100%{
+    width: 100%;
+    height: 75px;
+    border-radius: 2px;
+  }
+}
+
+.text-radial-color{
+  background: radial-gradient(
+    circle at top left,
+    #095e6d 0%,
+    #7d25b8 40%,
+    #125a9c 60%,
+    #1db96b  100%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.secondary-bg{
+  height: 100vh;
+  background: linear-gradient(135deg, #6e0dd0, #380053);
+}
+
+.radial-bg{
+    background: radial-gradient(
+    circle at top left,
+    #095e6d 0%,
+    #7912b9 40%,
+    #4786c2 60%,
+    #bc11cc  100%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

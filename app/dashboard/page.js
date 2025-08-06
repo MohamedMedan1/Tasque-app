@@ -27,7 +27,7 @@ export default async function Page({searchParams}) {
     const userFirstName = (user?.user_metadata?.fullName).split(" ").at(0) || "user";
         
     return (
-        <div className="p-10 grid grid-rows-[1fr_auto] max-h-[100vh]">
+        <div className="min-w-[335px] max-w-[400px] mx-auto sm:max-w-full p-10 grid grid-rows-[1fr_auto] max-h-[100vh]">
             <h2 className="text-radial-color text-3xl font-semibold mt-5 text-center sm:text-start">Welcome, {userFirstName}</h2>
             <main className={`grid grid-cols-1 ${tasks.length > 0 ? "lg:grid-cols-[1fr_2fr]":"lg:grid-cols-[2fr_1fr]" } gap-7 xl:gap-10 mt-14 grid-rows-[1fr_auto]`}>
                 <CreateTaskForm />

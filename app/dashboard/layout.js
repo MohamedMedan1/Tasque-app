@@ -15,7 +15,9 @@ export default function Layout({children}) {
                         <DashboardHeader/>        
                     </BurgerIcon>
                 </div>
-                <div>{children}</div>
+                <div className="max-w-[400px] mx-auto sm:max-w-full sm:mx-0">
+                    {children}
+                </div>
             </CustomizedLayout>
         </ExpandNavProvider>
     );

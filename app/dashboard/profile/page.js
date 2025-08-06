@@ -20,7 +20,7 @@ export default async function Page() {
     const userName = fullName.split(' ').length > 2 ? fullName.split(' ').slice(0,2) : fullName;
     
     return (
-        <div className="mx-10 pb-5">
+        <div className="max-w-[335px] sm:max-w-full mx-auto my-10 sm:mx-10 pb-5">
             <SectionTitle>Profile</SectionTitle>
             <Card additionalStyles="flex items-center gap-6 shadow-md">
                 <Image src={profileImage} alt="profile-icon" quality={90} height={100} width={100} />

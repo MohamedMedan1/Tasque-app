@@ -4,7 +4,7 @@ import PasswordInput from "./PasswordInput";
 export default function CredentialsFields() {
     return (
         <>
-            <div className="flex flex-col gap-3 mb-5">
+            <div className="flex flex-col gap-3 mb-6">
                 <label
                 htmlFor="user-email"
                 className="text-lg text-main-text font-semibold">Email
@@ -17,7 +17,7 @@ export default function CredentialsFields() {
                     <HiMiniUser size={18} className="absolute top-[50%] left-3 translate-y-[-50%] text-primary"/>
                 </div>
             </div>
-            <div className="flex flex-col gap-3 mb-10">
+            <div className="flex flex-col gap-3 mb-6">
                 <label
                 htmlFor="user-password"
                 className="text-lg text-main-text font-semibold">Password

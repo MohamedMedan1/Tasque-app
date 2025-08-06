@@ -8,7 +8,6 @@ export const metadata = {
     description: "Create your account to get started with our modern task management app. Enjoy a clean interface, responsive design, and seamless productivity."
 };
 
-
 export default function Page() {
     return (
         <div className="secondary-bg flex items-center justify-center">

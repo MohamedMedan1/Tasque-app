@@ -54,7 +54,7 @@ export default function CreateAccountForm() {
           </div>
         </div>
         <CredentialsFields/>
-        <div className="flex flex-col gap-2 mb-6 sm:mb-12">
+        <div className="flex flex-col gap-2 mb-8 sm:mb-12">
           <label
             htmlFor="confirm-password"
             className="text-main-text font-semibold"

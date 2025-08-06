@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <div className="m-10">
+        <div className="w-[335px] mx-auto sm:w-full">
             <SectionTitle>Settings</SectionTitle>
-            <Card additionalStyles="flex flex-col gap-5 shadow-md mb-5 ">
+            <Card additionalStyles="flex flex-col gap-5 shadow-md mb-5">
                 <div className="flex items-center gap-5">
                     <p className="text-main-text font-semibold text-lg">Dark Mode</p>
                     <DarkModeToggler/>

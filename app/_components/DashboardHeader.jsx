@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HiArchiveBox, HiHome, HiOutlineCog6Tooth, HiUser} from "react-icons/hi2";
+import LogoutButton from "./LogoutButton";
 
 
 export default function DashboardHeader(){
@@ -28,6 +29,9 @@ export default function DashboardHeader(){
                     <HiOutlineCog6Tooth/>
                     <span>Settings</span>
                 </Link>
+            </li>
+            <li className="bg-gray-300 rounded-md shadow-md hover:bg-transparent transition-all">
+                <LogoutButton/>
             </li>
         </ul>
     );

@@ -31,7 +31,7 @@ export default function LoginForm() {
       <form action={handleLogin} className="mt-10">
         <CredentialsFields/>
         <SubmitButton additionalStyles="w-full bg-primary mx-auto border-none shadow-lg text-sm hover:bg-main-text
-          hover:!text-primary mb-10 disabled:text-primary disabled:bg-gray-400">
+          hover:!text-primary mb-10 disabled:text-primary disabled:bg-gray-400 mt-3">
           Login
         </SubmitButton>
         <p className="text-center text-main-text text-sm">

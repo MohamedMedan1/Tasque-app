@@ -24,7 +24,7 @@ export default async function Page({ searchParams }) {
     const tasks = await getTasks(userId, taskStatus, sortBy, searchDate);
 
     return (
-        <div className="w-[335px] sm:w-full mx-auto my-10 sm:m-10">
+        <div className="min-w-[335px] max-w-[400px] mx-auto sm:max-w-full my-10 sm:m-10">
             <h3 className="radial-bg text-3xl mb-10 font-semibold mt-5 text-center sm:text-start">All Account Tasks</h3>
             <SearchInput/>
             <div className="w-full my-10">

@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <div className="w-[335px] mx-auto sm:w-full">
+        <div className="min-w-[335px] max-w-[400px] mx-auto sm:max-w-full sm:mx-10">
             <SectionTitle>Settings</SectionTitle>
             <Card additionalStyles="flex flex-col gap-5 shadow-md mb-5">
                 <div className="flex items-center gap-5">

@@ -18,7 +18,6 @@ export const metadata = {
 
 export const runtime = 'nodejs';
 
-
 export default async function Page({searchParams}) {
     const user = await getCurrentUser();
     const { id: userId } = await getAccountID(user?.email);
